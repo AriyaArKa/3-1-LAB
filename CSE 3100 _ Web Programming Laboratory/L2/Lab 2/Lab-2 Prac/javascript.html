@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab-2 Javascript
+        </title>
+        <style>
+
+        </style>
+        <script>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.write(text); // Display the list
+        </script>
+    </head>
+    <body>
+        <h1> Javascript</h1>
+        <p id="demo"></p>
+        <p >Javascript is a popular programming language</p>
+        <script>
+            document.getElementById("demo").innerHTML="My First Javascript";
+        </script>
+        <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+        <br><br>
+        <button onclick="this.innerHTML = Date()">The time is?</button>
+      <!---------DOM Document Object Model-->  
+
+    </body>
+</html>

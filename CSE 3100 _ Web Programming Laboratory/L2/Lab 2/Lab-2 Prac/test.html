@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>My Website</title>
+    </head>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.city {
+background-color: aqua;
+color:brown;
+border: 2px dashed black;
+margin: 20px;
+padding: 20px;
+}
+#idh1 {
+    color: blueviolet;
+}
+    </style>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+    <body>
+        <h3>KUET</h1>
+            <a href="https://www.kuet.ac.bd/"> <img src="logo.png" alt="KUET LOGO" width="104" height="142"> </a>
+        <p>This is a <b>bold</b> text and <br> this is a <i>italic</i> text <br> this is <sub>subscript</sub><br> this is a <sup>superscript</sup></p>
+    <!-- -----------------------------------------Table--------------------------------------------              -->
+        <table style="width: 50%;">
+        <tr>
+            <th >Name</th>
+                <th>Roll</th>
+                <th>Address</th>
+                
+        </tr>
+        <tr>
+            <td>Subah</td>
+                <td>1807006</td>
+                <td>Chittagong</td>
+                
+        </tr>
+        <tr>
+            <td>Tasnuva</td>
+                <td>1807101</td>
+                <td>Dhaka</td>
+               
+        </tr>
+    </table>
+   
+    <!----------------------------------Merging/ splitting table cells------------------------------------------>
+   
+    <br>
+    <div>
+    <table>
+        <tr>
+            <th colspan="2">
+                A
+            </td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td rowspan="2">D</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+    </table>
+   </div>
+
+    <!-- -------------------------------List----------------------------------------------------->
+    <ol type="I">
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+        <li>Strawberry</li>
+    </ol>
+   
+    <!------------------------------Block elements inline elements----------->
+    <p style="border: 1px solid black ;width: 50%"> My Name is Subah</p>
+    <p style="border: 1px solid black">My Roll is 1807006</p>
+    <p style="border: 1px solid black"> My Name is Subah<BR>My Roll is 1807006</P>
+    <div class="city" >
+        <h1 id="idh1"> London</h1>
+        <p> London is the capital of England.</p>
+    </div>
+    <div class="city">
+        <h1>Dhaka</h1>
+        <p>Dhaka is the capital of Bangladesh.</p>
+
+    </div>
+    <div class="city">
+        <h1>Paris</h1>
+        <p>Paris is the capital of France.</p>
+    </div>
+    <hr>
+    
+     <!------------------------------------HTML Forms-------------------------------------------------------->
+    <form action="/action_page.php" method="get" target="_self">
+       <label for="fname">First Name: </label><br>
+       <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br>
+       <label for="lname">Last Name</label><br>
+       <input type="text" id="lname" name="lname" placeholder="Enter your first name"><br>
+       <br>
+       <input type="reset" >
+       <br>
+       <input type="submit" value="submit">
+    
+
+    </form>
+
+</body>
+</html>
